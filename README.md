@@ -1,4 +1,7 @@
 # frontDesign
 Some simple but functional design
 ## Responsive navigation bar
-![](responsiveNavbar.gif)
+![](./gif/responsiveNavbar.gif)
+
+## Responsice side slide navigation bar
+![](./gif/sideNavbar.gif)
