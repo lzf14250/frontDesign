@@ -1,0 +1,239 @@
+@media only screen and (min-width: 700px) {
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+}
+
+body {
+    background: gray;
+    height: 100vh;
+}
+
+nav {
+    position: relative;
+    background: #2ecc71;
+    width: 100vw;
+    height: 10vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background: rgba(52, 152, 219, 0.7);
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 10%;
+}
+
+.logo a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+span {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.logo span {
+    font-size: 1.6em;
+}
+
+.nav-list {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    margin: 0 10%;
+    width: 70%;
+    top: 0;
+}
+
+.nav-list-link {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 24%;
+    height: 100%;
+    position: relative;
+}
+
+.dropdown-head {
+    display: block;
+    width: 100%;
+}
+
+div.dropdown-list {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    background: #2ecc71;
+    display: none;
+}
+
+.nav-list-link:hover .dropdown-list {
+    display: block;
+}
+
+a.dropdown-list-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 80px;
+}
+
+.nav-trigger {
+    display: none;
+}
+}
+
+@media only screen and (max-width: 700px) {
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+}
+
+body {
+    background: gray;
+    height: 100vh;
+}
+
+nav {
+    position: relative;
+    background: #2ecc71;
+    width: 100vw;
+    height: 10vh;
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+
+.logo a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+span {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3em;
+}
+
+.logo span {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-list span {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background: rgba(46, 204, 113, 0.7);
+}
+
+.nav-trigger {
+    position: absolute;
+    width: 10%;
+    cursor: pointer;
+    right: 1em;
+}
+
+.open-trigger {
+    top: 0;
+    height: 100%;
+}
+
+.close-trigger {
+    height: 5%;
+    top: 1em;
+}
+
+.nav-trigger i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.nav-list {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(52, 152, 219,1.0);
+    top: 0;
+    left: 100%;
+    transition: ease-in 300ms;
+}
+
+.show-sidenav {
+    left: 0;
+}
+
+a.nav-list-link {
+    position: relative;
+    display: block;
+    height: 10vh;
+}
+
+div.nav-list-link {
+    position: relative;
+    display: block;
+    height: auto;
+}
+
+.list-head {
+    margin-top: 6vh;
+}
+
+.dropdown-list {
+    display: block;
+    position: relative;
+    height: 0vh;
+    width: 100%;
+    background: rgba(39, 174, 96,1.0);
+    overflow: hidden;
+    transition: ease 300ms;
+}
+
+.show-dropdown {
+    height: 32vh;
+}
+
+.dropdown-list-link {
+    position: relative;
+    display: block;
+    height: 8vh;
+    width: 100%;
+}
+.dropdown-list-link span {
+    font-size: 1.1em;
+    color: rgba(236, 240, 241,1.0);
+}
+}

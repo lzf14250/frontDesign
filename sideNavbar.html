@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>side nav bar</title>
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/f9221aaab6.js"></script>
+        <link rel="stylesheet" href="css/sideNavbar.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <span>DancerClub</span>
+                </a>
+            </div>
+
+            <div class="nav-trigger open-trigger">
+                <i class="fas fa-ellipsis-h fa-lg"></i>
+            </div>
+
+            <div class="nav-list">
+                <div class="nav-trigger close-trigger">
+                    <i class="fas fa-times fa-lg"></i>
+                </div>
+
+                <a href="#" class="nav-list-link list-head">
+                    <span>Home</span>
+                </a>
+                <div href="#" class="nav-list-link">
+                    <a href="#" class="nav-list-link dropdown-head">
+                        <span>Dancer</span>
+                    </a>
+                    <div class="dropdown-list">
+                        <a href="#" class="dropdown-list-link">
+                            <span>Michael</span>
+                        </a>
+                        <a href="#" class="dropdown-list-link">
+                            <span>Catherine</span>
+                        </a>
+                        <a href="#" class="dropdown-list-link">
+                            <span>Clinton</span>
+                        </a>
+                        <a href="#" class="dropdown-list-link">
+                            <span>Joseph</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="nav-list-link">
+                    <span>Training</span>
+                </a>
+                <a href="#" class="nav-list-link">
+                    <span>Contact Us</span>
+                </a>
+            </div>
+        </nav>
+        <script>
+            const triggers = document.querySelectorAll('.nav-trigger');
+            const navlist = document.querySelector('.nav-list');
+            const dropdownHead = document.querySelector('.dropdown-head');
+            const dropdownList = document.querySelector('.dropdown-list');
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', () => {
+                    navlist.classList.toggle('show-sidenav');
+                });
+            })
+            dropdownHead.addEventListener('click', () => {
+                dropdownList.classList.toggle('show-dropdown');
+            });
+        </script>
+    </body>
+</html>
