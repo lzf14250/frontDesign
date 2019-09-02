@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: gray;
+}
+
+.tab {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(52, 73, 94,1.0);
+}
+
+.tab-head {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10vh;
+    background: rgba(52, 152, 219,1.0);
+}
+
+.tab-btn {
+    position: relative;
+    box-sizing: border-box;
+    width: 25%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.activated {
+    background: rgba(46, 204, 113,1.0);
+}
+
+.tab-btn:hover {
+    background: rgba(46, 204, 113,1.0);
+}
+
+.tab-btn span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    color: white;
+}
+
+.tab-body {
+    position: relative;
+    padding: 10px 20px;
+    height: auto;
+}
+
+.tab-content {
+    width: 100%;
+    display: none;
+}
+
+.initial-content {
+    display: block;
+}
+
+.tab-content p {
+    font-size: 1.3em;
+    line-height: 1.4;
+    color: white;
+}
