@@ -8,3 +8,6 @@ Some simple but functional design
 
 ## switchable tab
 ![](./gif/switchTab.gif)
+
+## autoSlide & draggable Tab
+![](./gif/autoSlideTab.gif)
