@@ -11,3 +11,6 @@ Some simple but functional design
 
 ## autoSlide & draggable Tab
 ![](./gif/autoSlideTab.gif)
+
+## button & draggable Tab
+![](./gif/buttonTab.gif)
