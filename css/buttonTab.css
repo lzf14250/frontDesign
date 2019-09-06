@@ -20,7 +20,7 @@ body {
     overflow: hidden;
 }
 
-.slide-container button {
+.slide-container .slide-btn {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -29,6 +29,7 @@ body {
     border-radius: 50%;
     cursor: pointer;
     transform: translateY(-50%);
+    outline: none;
 }
 
 .slide-container button:hover {
@@ -70,4 +71,44 @@ body {
 .slide-img-container {
     width: 25%;
     height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+}
+
+.nav-btn-group {
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+    width: 40%;
+    height: 15%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.nav-btn-container {
+    position: relative;
+    width: 15%;
+    height: 100%;
+}
+
+.nav-btn-container button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    outline: none;
+}
+
+button.primary {
+    background: white;
 }
