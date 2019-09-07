@@ -30,6 +30,8 @@ body {
     cursor: pointer;
     transform: translateY(-50%);
     outline: none;
+    opacity: 0;
+    transition: ease 300ms;
 }
 
 .slide-container button:hover {
@@ -37,13 +39,23 @@ body {
 }
 
 #left-button {
-    left: 5%;
+    left: 0;
     top: 50%;
 }
 
 #right-button {
-    right: 5%;
+    right: 0;
     top: 50%;
+}
+
+.slide-container:hover #left-button {
+    left: 5%;
+    opacity: 1;
+}
+
+.slide-container:hover #right-button {
+    right: 5%;
+    opacity: 1;
 }
 
 .message {
@@ -87,6 +99,12 @@ body {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
+    transition: opacity ease 300ms;
+    opacity: 0;
+}
+
+.slide-container:hover .nav-btn-group {
+    opacity: 1
 }
 
 .nav-btn-container {

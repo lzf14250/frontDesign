@@ -14,3 +14,6 @@ Some simple but functional design
 
 ## button & draggable Tab
 ![](./gif/buttonTab.gif)
+
+## top & bottom slide Tab
+![](./gif/topBotSlideTab.gif)
